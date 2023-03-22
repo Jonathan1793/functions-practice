@@ -42,8 +42,7 @@ const sumOfTwoIntegers = (num1, num2) => {
 
 // Your code goes here...
 const isOneOfThemOrTheirSumIsFourty = (num1, num2) => {
-  if (num1 === 40 || num2 === 40 || num1 + num2 === 40) return true;
-  return false;
+  return num1 === 40 || num2 === 40 || num1 + num2 === 40;
 };
 
 // === TEST YOURSELF ===

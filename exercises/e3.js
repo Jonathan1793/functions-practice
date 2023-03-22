@@ -42,19 +42,21 @@ function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
 
 // Your code goes here...
 function getValueWithConditionOne(num1, num2) {
-  if (num1 + num2 === 80) {
-    // I guess you can compare both numbers to 40, but since its stated that both of
-    //them had to be 40, this was easier
+  if (num1 === 40 && num2 === 40) {
     return num1 + num2;
   }
   return (num1 + num2) * 2;
 }
 
-const getValueWithConditionTwo = (num1, num2) =>
-  num1 + num2 === 80 ? num1 + num2 : (num1 + num2) * 2;
+const getValueWithConditionTwo = (num1, num2) => {
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2;
+  }
+  return (num1 + num2) * 2;
+};
 
 const getValueWithConditionThree = function (num1, num2) {
-  if (num1 + num2 === 80) {
+  if (num1 === 40 && num2 === 40) {
     return num1 + num2;
   }
   return (num1 + num2) * 2;
